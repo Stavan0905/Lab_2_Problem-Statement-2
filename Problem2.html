@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation</title>
+  <style>
+    #demoText { color: blue; position: relative; }
+    #image { width: 200px; }
+  </style>
+</head>
+<body>
+  <h2 id="demoText">Original Text</h2>
+  <button onclick="changeText()">Change Text</button>
+  <button onclick="changeStyle()">Change Style</button>
+  <button onclick="changeImage()">Change Image</button>
+  <img id="image" src="copy.png" alt="Old Image">
+
+  <div id="parentNode"></div>
+  <button onclick="addNode()">Add Text Node</button>
+  <button onclick="deleteNode()">Delete Node</button>
+
+  <form id="formData">
+    <input type="text" name="username" placeholder="Username">
+    <button id="jqueryBtn">Click Me</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="domscript.js"></script>
+</body>
+</html>
